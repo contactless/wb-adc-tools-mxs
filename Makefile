@@ -15,7 +15,8 @@ $(BIN_NAME): $(SRC)
 	$(CC) $^ -o $@
 
 install: $(BIN_NAME) $(SCRIPTS)
-	install -D -m 0755 -t $(DESTDIR)/$(prefix)/bin $^
+	install -m 0644 -d $(DESTDIR)/$(prefix)/bin
+	install -m 0755 -t $(DESTDIR)/$(prefix)/bin $^
 
 clean:
 	@rm -f $(BIN_NAME)
