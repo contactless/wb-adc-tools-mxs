@@ -1,0 +1,12 @@
+Source: wb-adc-tools-mxs
+Maintainer: Alexey Ignatov <lexszero@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: wb-adc-tools-mxs
+Architecture: armel
+Depends: ${shlibs:Depends}, ${misc:Depends}, wb-utils
+Conflicts: wb-utils (< 1.73)
+Description: Tools for working with ADC of a Wiren Board device based on i.MX23/28 SoC.

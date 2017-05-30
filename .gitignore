@@ -1,0 +1,6 @@
+debian/wb-adc-tools-mxs/
+debian/files
+debian/*.debhelper*
+debian/*.substvars
+
+lradc-set-current
